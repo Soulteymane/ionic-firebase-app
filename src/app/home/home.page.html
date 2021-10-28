@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ODK TEST
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form" [fullscreen]="true" >
+  <div class="logo">
+    <img src="./assets/pngaa.png" alt="#">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/register']" expand="block"  color="primary" style="margin-top: 10px;" class="register">Register</ion-button>
+
+
+        <p class="choix">Avez-vous déjà un compte?</p>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Se connecter</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
